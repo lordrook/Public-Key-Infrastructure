@@ -1,2 +1,1 @@
-# Public-Key-Infrastructure
-Java SE implementation of Public Key Infastructure
+# Java SE Implementation of Public Key Infrastructure

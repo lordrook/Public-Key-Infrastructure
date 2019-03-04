@@ -1,0 +1,113 @@
+################# CA #################
+# ---- CA connectivity ----
+IP_CA=localhost
+PORT_CA=8001
+
+# ---- CA certification ----
+CA_KEY_SIZE=1024
+CA_ALIAS=Root Certification Authority
+
+# ---- CA Keystore ----
+CA_KS_PATH=keystore/ca.keystore
+CA_KS_PASS=password
+CA_KS_ALIAS_CERT=CA_Certificate
+CA_KS_ALIAS_KEY=CA_Private
+
+# ---- CA Truststore ----
+CA_TS_PATH=keystore/ca.truststore
+CA_TS_PASS=password
+
+######################################
+################# RA #################
+# ---- RA connectivity ----
+IP_RA=localhost
+PORT_RA=8002
+
+# ---- RA certification ----
+RA_KEY_SIZE=1024
+RA_ALIAS=Intermediate Certification Authority
+
+# ---- RA Keystore ----
+RA_KS_PATH=keystore/ra.keystore
+RA_KS_PASS=password
+RA_KS_ALIAS_CERT=RA_Certificate
+RA_KS_ALIAS_KEY=RA_Private
+
+# ---- RA Truststore ----
+RA_TS_PATH=keystore/ra.truststore
+RA_TS_PASS=password
+
+######################################
+################# VA #################
+# ---- VA connectivity ----
+IP_VA=localhost
+PORT_VA=8005
+
+# ---- VA certification ----
+VA_KEY_SIZE=1024
+VA_ALIAS=Validation Authority
+
+# ---- VA Keystore ----
+VA_KS_PATH=keystore/va.keystore
+VA_KS_PASS=password
+VA_KS_ALIAS_CERT=VA_Certificate
+VA_KS_ALIAS_KEY=VA_Private
+
+# ---- VA Truststore ----
+VA_TS_PATH=keystore/ra.truststore
+VA_TS_PASS=password
+
+
+######################################
+############# REPOSITORY #############
+# ---- REPOSITORY connectivity ----
+IP_REPOSITORY=localhost
+PORT_REPOSITORY=8003
+PORT_REPOSITORY_HTTP=8004
+
+# ---- REPOSITORY certification ----
+REPOSITORY_KEY_SIZE=1024
+REPOSITORY_ALIAS=Repository
+
+# ---- REPOSITORY Keystore ----
+REPOSITORY_KS_PATH=keystore/repository.keystore
+REPOSITORY_KS_PASS=password
+REPOSITORY_KS_ALIAS_CERT=REPOSITORY_Certificate
+REPOSITORY_KS_ALIAS_KEY=REPOSITORY_Private
+
+# ---- REPOSITORY Truststore ----
+REPOSITORY_TS_PATH=keystore/repository.truststore
+REPOSITORY_TS_PASS=password
+
+# ---- REPOSITORY certStore ----
+REPOSITORY_CS_PATH=repositoryrecords/certificates.store
+REPOSITORY_CS_PASS=password
+
+RR_FILE_PATH=repositoryrecords/certificatrecords.cr
+
+######################################
+################ USER ################
+# ---- USER certification ----
+USER_KEY_SIZE=1024
+
+# ---- USER Keystore ----
+USER_KS_PATH=keystore/user.keystore
+USER_KS_PASS=password
+KS_ALIAS_CERT_USER=USER_Certificate
+KS_ALIAS_KEY_USER=USER_Private
+
+# ---- USER Truststore ----
+USER_TS_PATH=keystore/user.truststore
+USER_TS_PASS=password
+
+
+# ---- CRL File Name ----
+CRL_FILE_PATH=crl/certificaterevocationlist.crl
+
+
+
+
+
+
+
+
